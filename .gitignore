@@ -1,0 +1,11 @@
+# Ignore executable files
+*.exe
+
+# Ignore build directories
+build/
+release/
+debug/
+
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
