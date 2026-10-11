@@ -17,7 +17,11 @@ def countPrimes(numbers):
 
 def main():
     input_str = input("Enter a list of numbers separated by space: ")
-    numbers = [int(num) for num in input_str.split()]
+    try:
+        numbers = [int(num) for num in input_str.split()]
+    except ValueError:
+        print("Please enter integers separated by spaces.")
+        return
     print("The list of numbers is:", numbers)
     if numbers:
         num_to_check = numbers[0]
