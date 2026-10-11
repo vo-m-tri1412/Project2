@@ -1,0 +1,17 @@
+diff --git a/main.py b/main.py
+index d1e6797..86e46b0 100644
+--- a/main.py
++++ b/main.py
+@@ -5,9 +5,11 @@ def sortArray(numbers):
+ def isPrime(n):
+     if n <= 1:
+         return False
+-    for i in range(2, n):
++    i = 2
++    while i * i <= n:
+         if n % i == 0:
+             return False
++        i += 1
+     return True
+ 
+ 
