@@ -1,3 +1,7 @@
+def sortArray(numbers):
+    return sorted(numbers)
+
+
 def isPrime(n):
     if n <= 1:
         return False
@@ -22,6 +26,7 @@ def main():
         else:
             print(f"{num_to_check} is not a prime number.")
     print("The number of prime numbers is:", countPrimes(numbers))
+    print("The sorted array is:", sortArray(numbers))
 
 
 if __name__ == "__main__":
